@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fontMain: "Poppins";
+    --fontColor: rgb(62, 62, 62);
+    --color1: #1c7549;
+    --color2: #4f9472;
+    --color3: #81b39a;
+    --color4: #b3d1c2;
+    --color4: #e6f0eb;
+}
+
+html{
+    font-family: var(--fontMain);
+}
+
+
+
+nav{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+.seccion-articulo{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+
+}
+
+.seccion-articulo .descripcion{
+    width: 80%;
+}
+
+.seccion-articulo .descripcion .subtitulo{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.imagen-seccion img{
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+/* */
+
+
+
+.logo-page{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.menu-page{
+    background-color: var(--color4);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.menu-hamburger{
+    margin-left: auto;
+    border: none;
+    background-color: var(--color4);
+    border-radius: 12px;
+}
+
+.menu-hamburger-close{
+    margin-left: auto;
+    border: none;
+    background-color: var(--color4);
+    border-radius: 12px;
+}
+
+
+
+.opciones-menu li{
+    list-style-type: none;
+}
+
+.opciones-menu li a{
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+@media screen and (min-width: 660px) {
+    nav{
+        background-color: #1c7549;
+        height: 95px;
+    }
+
+    .seccion-articulo{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+    
+    }
+
+    .logo-page{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        height: 100%;
+        padding: 0.5px;
+    }
+
+    .logo-page img{
+        height: 85%;
+        margin: auto;
+    }
+    
+    .menu-page{
+        background-color: var(--color1);
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        height: 100%
+    }
+    
+    .menu-hamburger{
+        display: none;
+    }
+    
+    .opciones-menu{
+        margin: auto;
+    }
+
+    .opciones-menu ul{
+        display: flex;
+        flex-direction: row;
+        align-content   : center;
+        margin: auto;
+    }
+
+    .opciones-menu ul li{
+        margin: 10px;
+    }
+
+    .opciones-menu li a{
+        text-decoration: none;
+        color: var(--color4);
+    }
+    
+}
